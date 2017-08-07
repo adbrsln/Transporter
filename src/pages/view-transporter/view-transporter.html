@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Transporter's Details </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content class="card-background-page" center text-center>
+  <ion-card>
+    <img src="assets/img/user.png"/>
+
+    <ion-card-content>
+      <ion-card-title>
+       {{ transporterItem.transporterName }}
+      </ion-card-title>
+      <p>
+        {{ transporterItem.transporterPhone }}
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button block color="primary" icon-start href="tel:+60176213816" >
+          <ion-icon name='call'></ion-icon>
+           Call
+        </button>
+      </ion-col>
+      <ion-col >
+        <button ion-button block color="secondary" icon-starthref="#" onclick="window.open('https://api.whatsapp.com/send?phone=6017621381', '_blank','location=no');">
+          <ion-icon name='text'></ion-icon>
+            &nbsp;&nbsp;WhatsApp
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+  
+</ion-content>
